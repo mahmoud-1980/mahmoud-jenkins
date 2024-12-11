@@ -2,13 +2,13 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: mahmoud-jenkins
+  name: jenkins
 spec:
   host: jenkins-mahmoud.apps.cluster4.karoshi.se
   port:
     targetPort: 8080
   to:
     kind: Service
-    name: mahmoud-jenkins
+    name: jenkins
     weight: 100
   wildcardPolicy: None
