@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jenkins
+  name: mahmoud-jenkins
 spec:
   replicas: 1
   selector:
@@ -11,10 +11,10 @@ spec:
   template:
     metadata:
       labels:
-        app: jenkins
+        app: mahmoud-jenkins
     spec:
       containers:
-      - name: jenkins
+      - name: mahmoud-jenkins
         image: docker.io/jenkins/jenkins:lts-jdk17 
         imagePullPolicy: Always
         ports:
