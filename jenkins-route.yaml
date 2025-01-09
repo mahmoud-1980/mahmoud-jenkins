@@ -4,7 +4,7 @@ kind: Route
 metadata:
   name: jenkins
 spec:
-  host: jenkins-mahmoud.apps.cluster4.karoshi.se
+  host: jenkins-mahmoud.apps.cluster5.karoshi.se
   port:
     targetPort: 8080
   to:
